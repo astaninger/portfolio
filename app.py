@@ -10,7 +10,7 @@ def index():
 
 @app.route('/projects', methods=["GET"])
 def projects():
-    pass #return render_template('projects.html')
+    return render_template('projects.html')
 
 @app.route('/resume')
 def resume():
