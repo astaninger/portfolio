@@ -3,12 +3,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Alex Staninger</title>
+    <title> Alex Staninger</title>
 </head>
 {% extends "bootstrap/base.html" %}
 
 {% block navbar %}
-<div class="navbar navbar-inverse" role="navigation">
+<div class="navbar navbar-inverse navbar-fixed" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle"
@@ -18,13 +18,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">My Portfolio</a>
+            <a class="navbar-brand" href="/">Alex Staninger</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/resume">Resume</a></li>
+                <li><a href="/">about</a></li>
+                <li><a href="/projects">projects</a></li>
+                <li><a href="/resume">resume</a></li>
             </ul>
         </div>
     </div>
@@ -34,7 +34,11 @@
 {% block content %}
 <div class="container">
     <div class="page-header">
-        <h1>Hello, {{ ip }}. Welcome to my portfolio!</h1>
+        <h3>About Me</h3>
+    </div>
+    <div class='bio'>
+        <p> Hello {{ ip }}, I am an recent (August 2018) UC San Diego graduate with a BS in Math-Computer Science. </p>
+        <p>I am actively seeking a software development role. </p>
     </div>
 </div>
 {% endblock %}
