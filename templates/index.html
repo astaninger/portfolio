@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title> Alex Staninger</title>
-</head>
 {% extends "bootstrap/base.html" %}
+{% block html_attribs %} lang='en' {% endblock html_attribs %}
+
+{%- block metas %}
+{{ super() }}
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta maximum-scale=1.0"/>
+{%- endblock metas %}
+
+{% block title %}Alex Staninger{% endblock %}
 
 {% block navbar %}
-{{ super() }}
 <div class="navbar navbar-inverse navbar-fixed" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -43,4 +44,3 @@
     </div>
 </div>
 {% endblock %}
-</html>
