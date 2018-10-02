@@ -9,7 +9,17 @@
   </div>
 </div>
 
-<div class="conatiner">
-  <div class='project-name'>
-    <
-    {% endblock %}
+{% set projects = {"GenMatch": "https://www.github.com/astaninger/genmatch", "SpeakOut": "https://www.github.com/astaninger/genmatch", "Planet Forest Landing": "https://cse167finalprojectfall17.blogspot.com/", "Pollcial": "https://github.com/astaninger/Pollcial"} %}
+
+{% for k, v in projects.items() %}
+  <div class="container">
+    <div class='project-name'>
+      <h4><a href={{ v }} target='_blank'>{{k}}</a></h4>
+    </div>
+      <img src='' alt='{{k}}'>
+  </div>
+  <br>
+{% endfor %}
+
+
+{% endblock %}
