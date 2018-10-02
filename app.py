@@ -8,7 +8,7 @@ bootstrap = Bootstrap(app)
 @app.route('/', methods=["GET"])
 def index():
     return render_template('index.html', ip=request.remote_addr)
-
+    
 @app.route('/projects', methods=["GET"])
 def projects():
     return render_template('projects.html')
