@@ -1,5 +1,6 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, url_for, send_file
 from flask_bootstrap import Bootstrap
+from os import chdir
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
@@ -14,4 +15,4 @@ def projects():
 
 @app.route('/resume')
 def resume():
-    pass #return render_template('resume.pdf')
+    return send_file('static/alex_resume2.pdf')
