@@ -15,4 +15,4 @@ def projects():
 
 @app.route('/resume')
 def resume():
-    return send_file('static/alex_resume2.pdf')
+    return send_file('static/alex_resume_site.pdf')
