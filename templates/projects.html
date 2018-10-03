@@ -9,18 +9,68 @@
   </div>
 </div>
 
-{% set projects = {"GenMatch": "https://www.github.com/astaninger/genmatch", "SpeakOut": "https://www.github.com/astaninger/genmatch", "Planet Forest Landing": "https://cse167finalprojectfall17.blogspot.com/", "Pollcial": "https://github.com/astaninger/Pollcial"} %}
-
-{% for k, v in projects.items() %}
-  <div class="container">
-    <div class='project-name'>
-      <h4><a href={{ v }} target='_blank'>{{k}}</a></h4>
+<div class="container">
+  <div class="row">
+    <div class='project-name col-md-4'>
+      <h4><a href='https://www.github.com/astaninger/genmatch' target='_blank'>GenMatch</a></h4>
     </div>
-      <img src='' alt='{{k}}'>
+    <img class='col-md-4' src='/static/genmatch.jpg' alt='GenMatch'>
+    <div class='blurb col-md-4'>
+        <p>
+          Using Python, designed and implemented a web application using Flask and the Twilio API that allows users to video chat and message people with different and similar genes from their own using the Genome Link API.
+  Used the DocuSign API for written permission to use their genes ethically and Flask-SocketIO to handle Twilio
+        </p>
+    </div>
   </div>
-  <p>test</p>
-  <br>
-{% endfor %}
+</div>
+<br>
+
+<div class="container">
+  <div class='project-name'>
+    <h4><a href='https://www.github.com/astaninger/speakout' target='_blank'>SpeakOut</a></h4>
+  </div>
+  <img src='' alt='SpeakOut'>
+  <div class='blurb'>
+    <p>
+      Using Python, designed and implemented a web application using Flask and the Google Maps API that allows gender,
+racial, sexual orientation minorities to post where they have had negative interactions, generating statistics to better
+inform others.
+Used MongoDB to store user data and used Flask-SocketIO to update maps in real-time.
+    </p>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <div class='project-name'>
+    <h4><a href='https://cse167finalprojectfall17.blogspot.com/' target='_blank'>Planet Forest Landing</a></h4>
+  </div>
+  <iframe src='https://www.youtube.com/embed/dhCvJr1ii_E' alt='Planet Forest Landing'></iframe>
+  <div class='blurb'>
+    <p>
+      Using C++, designed and implemented a program using the OpenGL API to view a scene with a rocket ship object and
+a flag made out of Bezier surfaces.
+With a team, implemented procedurally generated terrain, procedurally generated forest using L-systems, toon shading,
+linear fog, and added sound effects using the Irrklang and OpenGL API
+    </p>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <div class='project-name'>
+    <h4><a href='https://github.com/astaninger/Pollcial' target='_blank'>Pollcial</a></h4>
+  </div>
+  <img src='static/poll.png' alt='Pollcial' height=100 width=100>
+  <div class='blurb'>
+    <p>
+      Using Java and XML, designed a mobile application using Android Studio that allows people to create and vote on
+polls about decisions they don’t want to make themselves using Firebase to store user information. Worked on a team
+of 10 other people.
+    </p>
+  </div>
+</div>
+<br>
 
 
 {% endblock %}
