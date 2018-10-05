@@ -8,3 +8,11 @@ body {
 .navbar a {
     color: #ffffff;
 }
+
+* {
+    font-family: Georgia;
+}
+
+.bio p, .blurb p {
+    font-family: Helvetica-Neue !important;
+}
