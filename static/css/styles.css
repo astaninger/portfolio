@@ -1,8 +1,9 @@
 body { 
     padding-top: 40px !important;
+    background-color: #eeeeee;
 }
 .navbar {
-    background-color: #96baf4
+    background-color: #4a84de
 }
 
 .navbar a {
@@ -19,6 +20,16 @@ body {
     font-weight:lighter !important;
 }
 
-.project-name h4 {
-    text-align:center !important;
+.vertical-row {
+    display: flex;
+    align-items: center;
+    text-align: : center;
+}
+
+.odd {
+    background-color:#96baf4
+}
+
+.even {
+    background-color: #c9ddfc
 }
