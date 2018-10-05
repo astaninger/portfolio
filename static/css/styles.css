@@ -18,3 +18,7 @@ body {
     font-family: Helvetica-Neue !important;
     font-weight:lighter !important;
 }
+
+.project-name h4 {
+    text-align:center !important;
+}
