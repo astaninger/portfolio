@@ -11,8 +11,10 @@ body {
 
 * {
     font-family: Georgia;
+    font-weight:bold;
 }
 
 .bio p, .blurb p {
     font-family: Helvetica-Neue !important;
+    font-weight:lighter !important;
 }
