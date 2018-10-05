@@ -23,7 +23,7 @@ type="image/x-icon">
 
 {% block body %}
 {% block navbar %}
-<nav class="navbar navbar-fixed-top" style='background-color: #eeeeee'>
+<nav class="navbar navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type='button' class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
@@ -32,7 +32,7 @@ type="image/x-icon">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Alex Staninger</a>
+      <a class="navbar-brand myName" href="/">Alex Staninger</a>
     </div>
     <div class="collapse navbar-collapse" id='myNavbar'>
       <ul class="nav navbar-nav">
@@ -54,6 +54,7 @@ type="image/x-icon">
 
 
 {% block content %}
+<div class='component'>
 <div class="container">
   <div class="page-header">
     <h3>about me</h3>
@@ -63,8 +64,9 @@ type="image/x-icon">
     <p>I am actively seeking a software development role. </p>
   </div>
   <img src='static/images/me.jpg' alt='selfie' height=200 width=200>
-  <p>I was in a band called <a href='bigbadbuffalo.bandcamp.com' alt=music> Big Bad Buffalo</a></p>
+  <p>I was in a band called <a href='https://bigbadbuffalo.bandcamp.com' alt=music target='_blank'> Big Bad Buffalo</a></p>
 
+</div>
 </div>
 
 

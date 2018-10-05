@@ -1,3 +1,10 @@
 body { 
-    padding-top: 50px; 
+    padding-top: 40px !important;
+}
+.navbar {
+    background-color: #96baf4
+}
+
+.navbar a {
+    color: #ffffff;
 }
